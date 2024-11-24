@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Developer Roadmap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Android Developer Learning Roadmap</h1>
+    <p>A structured guide to becoming an Android Developer.</p>
+  </header>
+  <main>
+    <!-- Section 1 -->
+    <section>
+      <h2>1. Programming Languages</h2>
+      <ul>
+        <li onclick="showPopup('popup-kotlin')">Kotlin</li>
+        <li onclick="showPopup('popup-java')">Java</li>
+      </ul>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+      <h2>2. Fundamentals</h2>
+      <ul>
+        <li onclick="showPopup('popup-ide')">Development IDE (e.g., Android Studio)</li>
+        <li onclick="showPopup('popup-oop')">Object-Oriented Programming (OOP)</li>
+        <li onclick="showPopup('popup-dsa')">Data Structures and Algorithms</li>
+        <li onclick="showPopup('popup-gradle')">Understanding Gradle</li>
+        <li onclick="showPopup('popup-git')">Version Control Systems (Git, GitHub)</li>
+      </ul>
+    </section>
+
+    <!-- Section 3 -->
+    <section>
+      <h2>3. App Components</h2>
+      <ul>
+        <li onclick="showPopup('popup-activities')">Activities and Activity Lifecycle</li>
+        <li onclick="showPopup('popup-services')">Services</li>
+        <li onclick="showPopup('popup-content')">Content Providers</li>
+        <li onclick="showPopup('popup-broadcast')">Broadcast Receivers</li>
+        <li onclick="showPopup('popup-intents')">Intents (Implicit and Explicit)</li>
+      </ul>
+    </section>
+
+    <!-- Section 4 -->
+    <section>
+      <h2>4. User Interface and Navigation</h2>
+      <ul>
+        <li onclick="showPopup('popup-layouts')">Layouts (Frame, Linear, Relative, Constraint)</li>
+        <li onclick="showPopup('popup-elements')">UI Elements (TextView, EditText, Buttons, ImageView)</li>
+        <li onclick="showPopup('popup-fragments')">Fragments and Dialogs</li>
+        <li onclick="showPopup('popup-recyclerview')">RecyclerView and ListView</li>
+        <li onclick="showPopup('popup-navigation')">Navigation Components</li>
+        <li onclick="showPopup('popup-jetpack')">Jetpack Compose</li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section>
+      <h2>5. Architecture and Design Patterns</h2>
+      <ul>
+        <li onclick="showPopup('popup-mvc')">MVC, MVP, MVVM, MVI</li>
+        <li onclick="showPopup('popup-repository')">Repository Pattern</li>
+        <li onclick="showPopup('popup-dependency')">Dependency Injection (Dagger, Hilt, Koin)</li>
+      </ul>
+    </section>
+
+    <!-- Section 6 -->
+    <section>
+      <h2>6. Storage and Networking</h2>
+      <ul>
+        <li onclick="showPopup('popup-preferences')">Shared Preferences and DataStore</li>
+        <li onclick="showPopup('popup-room')">Room Database</li>
+        <li onclick="showPopup('popup-files')">File System</li>
+        <li onclick="showPopup('popup-networking')">Networking (Retrofit, OkHttp)</li>
+        <li onclick="showPopup('popup-asynchronous')">Asynchronism (Coroutines, RxJava)</li>
+      </ul>
+    </section>
+
+    <!-- Section 7 -->
+    <section>
+      <h2>7. Common Services and Tools</h2>
+      <ul>
+        <li onclick="showPopup('popup-firebase')">Firebase Services (Authentication, Firestore, Cloud Messaging)</li>
+        <li onclick="showPopup('popup-google-play')">Google Play Services</li>
+        <li onclick="showPopup('popup-maps')">Google Maps</li>
+        <li onclick="showPopup('popup-linting')">Linting (Ktlint, Detekt)</li>
+        <li onclick="showPopup('popup-debugging')">Debugging (Timber, LeakCanary)</li>
+        <li onclick="showPopup('popup-testing')">Testing (JUnit, Espresso)</li>
+      </ul>
+    </section>
+
+    <!-- Section 8 -->
+    <section>
+      <h2>8. Distribution</h2>
+      <ul>
+        <li onclick="showPopup('popup-signed-apk')">Generating Signed APKs</li>
+        <li onclick="showPopup('popup-play-store')">Publishing on Google Play Store</li>
+        <li onclick="showPopup('popup-firebase-distribution')">Firebase App Distribution</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Popups -->
+  <div id="popup-kotlin" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-kotlin')">&times;</span>
+      <h3>Kotlin</h3>
+      <p>Kotlin is the official programming language for Android development. It is concise, expressive, and has null safety built in.</p>
+      <a href="https://kotlinlang.org/docs/home.html" target="_blank">Official Kotlin Documentation</a>
+    </div>
+  </div>
+
+  <div id="popup-java" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-java')">&times;</span>
+      <h3>Java</h3>
+      <p>Java is a foundational programming language for Android. It offers robust libraries and frameworks for Android apps.</p>
+      <a href="https://docs.oracle.com/javase/8/docs/" target="_blank">Official Java Documentation</a>
+    </div>
+  </div>
+
+  <div id="popup-ide" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-ide')">&times;</span>
+      <h3>Development IDE</h3>
+      <p>Android Studio is the official IDE for Android development. It provides tools for code editing, debugging, and testing.</p>
+      <a href="https://developer.android.com/studio" target="_blank">Learn About Android Studio</a>
+    </div>
+  </div>
+
+  <div id="popup-ide" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-ide')">&times;</span>
+      <h3>Android Studio</h3>
+      <p>Android Studio is the official IDE for Android development. It provides tools for building, debugging, and testing Android apps.</p>
+      <a href="https://developer.android.com/studio" target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <div id="popup-oop" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-oop')">&times;</span>
+      <h3>Object-Oriented Programming</h3>
+      <p>OOP is a programming paradigm that helps organize code using objects, which encapsulate data and behavior.</p>
+      <a href="https://www.w3schools.com/java/java_oop.asp" target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <div id="popup-dsa" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-dsa')">&times;</span>
+      <h3>Data Structures and Algorithms</h3>
+      <p>Learn essential data structures and algorithms to improve your problem-solving skills for Android development.</p>
+      <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <div id="popup-gradle" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-gradle')">&times;</span>
+      <h3>Understanding Gradle</h3>
+      <p>Gradle is a build automation tool used in Android projects to manage dependencies and tasks.</p>
+      <a href="https://gradle.org/" target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <div id="popup-git" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-git')">&times;</span>
+      <h3>Version Control Systems</h3>
+      <p>Git is a version control system to track changes and collaborate on code repositories.</p>
+      <a href="https://git-scm.com/" target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Popups for Section 3 -->
+<div id="popup-activities" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-activities')">&times;</span>
+      <h3>Activities and Activity Lifecycle</h3>
+      <p>An Activity represents a single screen in an app. Understanding the lifecycle of activities is crucial for managing state and resources effectively.</p>
+      <a href="https://developer.android.com/guide/components/activities/intro-activities" target="_blank">Learn more about Activities</a>
+    </div>
+  </div>
+  
+  <div id="popup-services" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-services')">&times;</span>
+      <h3>Services</h3>
+      <p>Services are components used to perform long-running operations in the background, such as downloading files or playing music.</p>
+      <a href="https://developer.android.com/guide/components/services" target="_blank">Learn more about Services</a>
+    </div>
+  </div>
+  
+  <div id="popup-content" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-content')">&times;</span>
+      <h3>Content Providers</h3>
+      <p>Content Providers enable apps to access data from other apps or share their data with other apps securely.</p>
+      <a href="https://developer.android.com/guide/topics/providers/content-providers" target="_blank">Learn more about Content Providers</a>
+    </div>
+  </div>
+  
+  <div id="popup-broadcast" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-broadcast')">&times;</span>
+      <h3>Broadcast Receivers</h3>
+      <p>Broadcast Receivers allow apps to listen for system-wide events like battery changes, connectivity, or custom app-specific broadcasts.</p>
+      <a href="https://developer.android.com/guide/components/broadcasts" target="_blank">Learn more about Broadcast Receivers</a>
+    </div>
+  </div>
+  
+  <div id="popup-intents" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-intents')">&times;</span>
+      <h3>Intents (Implicit and Explicit)</h3>
+      <p>Intents are used to request actions from other components, such as opening another activity or sending data.</p>
+      <a href="https://developer.android.com/guide/components/intents-filters" target="_blank">Learn more about Intents</a>
+    </div>
+  </div>
+  
+  <!-- Popups for Section 4 -->
+<div id="popup-layouts" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-layouts')">&times;</span>
+      <h3>Layouts</h3>
+      <p>Layouts define the structure of the user interface in an app. Common layouts include FrameLayout, LinearLayout, RelativeLayout, and ConstraintLayout.</p>
+      <a href="https://developer.android.com/guide/topics/ui/declaring-layout" target="_blank">Learn more about Layouts</a>
+    </div>
+  </div>
+  
+  <div id="popup-elements" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-elements')">&times;</span>
+      <h3>UI Elements</h3>
+      <p>UI Elements include widgets like TextView, EditText, Buttons, ImageView, and more, used to build the app's user interface.</p>
+      <a href="https://developer.android.com/develop/ui/views" target="_blank">Learn more about UI Elements</a>
+    </div>
+  </div>
+  
+  <div id="popup-fragments" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-fragments')">&times;</span>
+      <h3>Fragments and Dialogs</h3>
+      <p>Fragments represent reusable portions of UI in an activity, and dialogs are used for short, interactive prompts.</p>
+      <a href="https://developer.android.com/guide/components/fragments" target="_blank">Learn more about Fragments and Dialogs</a>
+    </div>
+  </div>
+  
+  <div id="popup-recyclerview" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-recyclerview')">&times;</span>
+      <h3>RecyclerView and ListView</h3>
+      <p>RecyclerView and ListView are used to display scrollable lists of items efficiently. RecyclerView is the modern replacement for ListView.</p>
+      <a href="https://developer.android.com/guide/topics/ui/layout/recyclerview" target="_blank">Learn more about RecyclerView</a>
+    </div>
+  </div>
+  
+  <div id="popup-navigation" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-navigation')">&times;</span>
+      <h3>Navigation Components</h3>
+      <p>The Navigation Component simplifies app navigation and ensures a consistent navigation experience in Android apps.</p>
+      <a href="https://developer.android.com/guide/navigation" target="_blank">Learn more about Navigation Components</a>
+    </div>
+  </div>
+  
+  <div id="popup-jetpack" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-jetpack')">&times;</span>
+      <h3>Jetpack Compose</h3>
+      <p>Jetpack Compose is a modern UI toolkit for building native Android UIs with a declarative approach.</p>
+      <a href="https://developer.android.com/jetpack/compose" target="_blank">Learn more about Jetpack Compose</a>
+    </div>
+  </div>
+
+  <!-- Popups for Section 5 -->
+<div id="popup-mvc" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-mvc')">&times;</span>
+      <h3>MVC, MVP, MVVM, MVI</h3>
+      <p>These are design patterns used to organize and manage the codebase. They help separate concerns, improve maintainability, and facilitate testing:</p>
+      <ul>
+        <li><b>MVC:</b> Model-View-Controller, where logic and UI are separated into different components.</li>
+        <li><b>MVP:</b> Model-View-Presenter, which separates the view logic from the business logic.</li>
+        <li><b>MVVM:</b> Model-View-ViewModel, widely used in Android with data binding.</li>
+        <li><b>MVI:</b> Model-View-Intent, focusing on unidirectional data flow.</li>
+      </ul>
+      <a href="https://developer.android.com/topic/architecture" target="_blank">Learn more about Architecture Patterns</a>
+    </div>
+  </div>
+  
+  <div id="popup-repository" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-repository')">&times;</span>
+      <h3>Repository Pattern</h3>
+      <p>The Repository Pattern provides a clean API for accessing data from multiple sources, such as a local database or a remote server. It abstracts the data source from the rest of the app, making the codebase modular and testable.</p>
+      <a href="https://developer.android.com/topic/libraries/architecture/repository" target="_blank">Learn more about the Repository Pattern</a>
+    </div>
+  </div>
+  
+  <div id="popup-dependency" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-dependency')">&times;</span>
+      <h3>Dependency Injection (Dagger, Hilt, Koin)</h3>
+      <p>Dependency Injection (DI) is a design pattern that provides dependencies to objects. Popular DI libraries in Android include:</p>
+      <ul>
+        <li><b>Dagger:</b> A robust DI framework with compile-time validation.</li>
+        <li><b>Hilt:</b> Built on Dagger, designed specifically for Android to simplify DI implementation.</li>
+        <li><b>Koin:</b> A lightweight and simple DI framework for Kotlin.</li>
+      </ul>
+      <a href="https://developer.android.com/training/dependency-injection" target="_blank">Learn more about Dependency Injection</a>
+    </div>
+  </div>
+
+  <!-- Popups for Section 6 -->
+<div id="popup-preferences" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-preferences')">&times;</span>
+      <h3>Shared Preferences and DataStore</h3>
+      <p>Shared Preferences and DataStore are used to store key-value pairs locally in the app:</p>
+      <ul>
+        <li><b>Shared Preferences:</b> Stores data in XML format for simple key-value storage.</li>
+        <li><b>DataStore:</b> A modern, more efficient, and coroutine-based API for data storage.</li>
+      </ul>
+      <a href="https://developer.android.com/topic/libraries/architecture/datastore" target="_blank">Learn more about DataStore</a>
+    </div>
+  </div>
+  
+  <div id="popup-room" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-room')">&times;</span>
+      <h3>Room Database</h3>
+      <p>The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.</p>
+      <a href="https://developer.android.com/training/data-storage/room" target="_blank">Learn more about Room Database</a>
+    </div>
+  </div>
+  
+  <div id="popup-files" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-files')">&times;</span>
+      <h3>File System</h3>
+      <p>The file system in Android allows apps to store files in internal or external storage. Use the Android API to manage file read/write operations securely.</p>
+      <a href="https://developer.android.com/training/data-storage/files" target="_blank">Learn more about File Storage</a>
+    </div>
+  </div>
+  
+  <div id="popup-networking" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-networking')">&times;</span>
+      <h3>Networking (Retrofit, OkHttp)</h3>
+      <p>Networking is essential for communicating with web servers. Popular libraries for Android networking include:</p>
+      <ul>
+        <li><b>Retrofit:</b> A type-safe HTTP client for making network requests.</li>
+        <li><b>OkHttp:</b> A powerful HTTP client used under the hood by Retrofit.</li>
+      </ul>
+      <a href="https://square.github.io/retrofit/" target="_blank">Learn more about Retrofit</a>
+      <br>
+      <a href="https://square.github.io/okhttp/" target="_blank">Learn more about OkHttp</a>
+    </div>
+  </div>
+  
+  <div id="popup-asynchronous" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-asynchronous')">&times;</span>
+      <h3>Asynchronism (Coroutines, RxJava)</h3>
+      <p>Asynchronous programming allows tasks to run in the background without blocking the main thread:</p>
+      <ul>
+        <li><b>Coroutines:</b> Kotlin's native solution for asynchronous programming, designed for simplicity and performance.</li>
+        <li><b>RxJava:</b> A popular reactive programming library for managing asynchronous data streams.</li>
+      </ul>
+      <a href="https://kotlinlang.org/docs/coroutines-overview.html" target="_blank">Learn more about Coroutines</a>
+      <br>
+      <a href="https://reactivex.io/" target="_blank">Learn more about RxJava</a>
+    </div>
+  </div>
+
+  <!-- Popups for Section 7 -->
+<div id="popup-firebase" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-firebase')">&times;</span>
+      <h3>Firebase Services</h3>
+      <p>Firebase provides a suite of backend services for Android developers, including:</p>
+      <ul>
+        <li><b>Authentication:</b> Simplifies user authentication with email, Google, Facebook, etc.</li>
+        <li><b>Firestore:</b> A flexible, scalable NoSQL cloud database for real-time data syncing.</li>
+        <li><b>Cloud Messaging:</b> A free messaging solution for sending notifications or data messages.</li>
+      </ul>
+      <a href="https://firebase.google.com/docs" target="_blank">Learn more about Firebase Services</a>
+    </div>
+  </div>
+  
+  <div id="popup-google-play" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-google-play')">&times;</span>
+      <h3>Google Play Services</h3>
+      <p>Google Play Services provide APIs for common Google services such as Maps, Location, and Sign-in, ensuring a consistent experience across devices.</p>
+      <a href="https://developers.google.com/android/guides/overview" target="_blank">Learn more about Google Play Services</a>
+    </div>
+  </div>
+  
+  <div id="popup-maps" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-maps')">&times;</span>
+      <h3>Google Maps</h3>
+      <p>Google Maps provides mapping functionality, including interactive maps, geolocation, and navigation features, to integrate into Android apps.</p>
+      <a href="https://developers.google.com/maps/documentation/android-sdk/overview" target="_blank">Learn more about Google Maps</a>
+    </div>
+  </div>
+  
+  <div id="popup-linting" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-linting')">&times;</span>
+      <h3>Linting (Ktlint, Detekt)</h3>
+      <p>Linting tools help enforce coding standards and identify potential issues in your codebase:</p>
+      <ul>
+        <li><b>Ktlint:</b> A linter for Kotlin that enforces coding style.</li>
+        <li><b>Detekt:</b> A static code analysis tool for Kotlin to detect code smells and enforce standards.</li>
+      </ul>
+      <a href="https://ktlint.github.io/" target="_blank">Learn more about Ktlint</a>
+      <br>
+      <a href="https://detekt.dev/" target="_blank">Learn more about Detekt</a>
+    </div>
+  </div>
+  
+  <div id="popup-debugging" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-debugging')">&times;</span>
+      <h3>Debugging (Timber, LeakCanary)</h3>
+      <p>Debugging tools help track and resolve issues in your app:</p>
+      <ul>
+        <li><b>Timber:</b> A lightweight library for better logging in Android.</li>
+        <li><b>LeakCanary:</b> A memory leak detection library that helps identify memory issues in your app.</li>
+      </ul>
+      <a href="https://github.com/JakeWharton/timber" target="_blank">Learn more about Timber</a>
+      <br>
+      <a href="https://square.github.io/leakcanary/" target="_blank">Learn more about LeakCanary</a>
+    </div>
+  </div>
+  
+  <div id="popup-testing" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-testing')">&times;</span>
+      <h3>Testing (JUnit, Espresso)</h3>
+      <p>Testing frameworks help ensure your app's reliability and correctness:</p>
+      <ul>
+        <li><b>JUnit:</b> A framework for unit testing in Java and Kotlin.</li>
+        <li><b>Espresso:</b> A UI testing framework for Android to write concise and reliable UI tests.</li>
+      </ul>
+      <a href="https://developer.android.com/training/testing" target="_blank">Learn more about Testing</a>
+    </div>
+  </div>
+  
+  <!-- Popups for Section 8 -->
+<div id="popup-signed-apk" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-signed-apk')">&times;</span>
+      <h3>Generating Signed APKs</h3>
+      <p>Before publishing your app, you need to sign it with a private key to ensure authenticity and integrity. Android Studio provides an easy way to generate signed APKs.</p>
+      <a href="https://developer.android.com/studio/publish/app-signing" target="_blank">Learn more about App Signing</a>
+    </div>
+  </div>
+  
+  <div id="popup-play-store" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-play-store')">&times;</span>
+      <h3>Publishing on Google Play Store</h3>
+      <p>The Google Play Store is the primary platform for distributing Android apps. Ensure your app complies with the Play Store policies before publishing.</p>
+      <a href="https://support.google.com/googleplay/android-developer/answer/9859152" target="_blank">Learn more about Publishing</a>
+    </div>
+  </div>
+  
+  <div id="popup-firebase-distribution" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup-firebase-distribution')">&times;</span>
+      <h3>Firebase App Distribution</h3>
+      <p>Firebase App Distribution helps share pre-release versions of your app with testers. It integrates seamlessly with Firebase Crashlytics for feedback.</p>
+      <a href="https://firebase.google.com/docs/app-distribution" target="_blank">Learn more about Firebase App Distribution</a>
+    </div>
+  </div>
+  
+
+  <!-- Add popups for all other items similarly -->
+
+  <footer>
+    <p>Inspired by <a href="https://roadmap.sh/android" target="_blank">roadmap.sh</a></p>
+  </footer>
+
+  <script>
+    function showPopup(id) {
+      const popup = document.getElementById(id);
+      popup.style.display = "flex";
+    }
+
+    function closePopup(id) {
+      const popup = document.getElementById(id);
+      popup.style.display = "none";
+    }
+  </script>
+</body>
+</html>
