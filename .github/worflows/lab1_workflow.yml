@@ -25,9 +25,9 @@ jobs:
     # Step 3: Build the Docker image
     - name: Build Docker image
       run: |
-        docker build . -t ${{ vars.DOCKERHUB_USERNAME }}/lab1:latest
+        docker build . -t osmovzhenko/lab1:latest
 
     # Step 4: Push the Docker image to Docker Hub
     - name: Push Docker image
       run: |
-        docker push ${{ vars.DOCKERHUB_USERNAME }}/lab1:latest
+        docker push osmovzhenko/lab1:latest
