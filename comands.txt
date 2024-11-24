@@ -1,8 +1,11 @@
 docker run -d -p 8080:80 lab1
 docker stop <id>
-docker run -d \                                                             
+docker run -d \
 --name watchtower \
 -v /var/run/docker.sock:/var/run/docker.sock \
+containrrr/watchtower \
+--interval 300
+docker run -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --run-once
 containrrr/watchtower
 docker ps
 docker build . -t lab1
