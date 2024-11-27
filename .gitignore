@@ -1,0 +1,5 @@
+# Ignore everything in the terraform directory
+terraform/*
+
+# Exclude main.tf
+!terraform/main.tf
