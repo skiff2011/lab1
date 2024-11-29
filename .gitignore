@@ -1,5 +1,8 @@
 # Ignore everything in the terraform directory
 terraform/*
+.terraform/*
 
 # Exclude main.tf
 !terraform/main.tf
+
+.DS_Store
