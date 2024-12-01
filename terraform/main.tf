@@ -34,7 +34,7 @@ resource "aws_instance" "lab2_server" {
               apt-get install -y docker-ce
               systemctl start docker
               systemctl enable docker
-              docker run -d -p 80:80 osmovzhenko/lab1
+              docker run -d --name lab1_app -p 80:80 osmovzhenko/lab1
               docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --interval 100
               EOF
 
