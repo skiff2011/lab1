@@ -52,7 +52,7 @@ resource "aws_security_group" "docker_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # Allow SSH from my IP
+    cidr_blocks = ["91.123.150.57/32"] # Allow SSH from my IP
   }
 
   ingress {
